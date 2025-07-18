@@ -115,7 +115,7 @@ function createTag(text, dim, onClick) {
 let RECOMMEND_DATA = [];
 
 async function loadRecommendations() {
-  const res = await fetch('recommend.json');
+  const res = await fetch('./recommend.json');
   RECOMMEND_DATA = await res.json();
 }
 
